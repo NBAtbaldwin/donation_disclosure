@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Get Started
 
-### 1. `npm install'
+### 1. `npm install`
 
 Run that in the donation_disclosure directory.
 
