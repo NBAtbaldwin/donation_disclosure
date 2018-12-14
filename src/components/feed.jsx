@@ -8,6 +8,12 @@ const feed = (props) => {
 
     const style = {height: '556px', overflow: 'auto'}
 
+    const loading = () => (
+        <div className="loading">
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        </div>
+    )
+
     return(
         <section style={style} className='feed' ref={(ref) => scrollParentRef = ref}>
             <InfiniteScroll
@@ -15,7 +21,7 @@ const feed = (props) => {
                 useWindow={false}
                 hasMore={props.hasMore}
                 loadMore={props.loadFunc}
-                loader={<div className="loader" key={0}>Loading ...</div>}
+                loader={loading()}
                 getScrollParent={() => scrollParentRef}
             >
                 {props.records.map((rec, idx) => {
