@@ -1,0 +1,51 @@
+.feeditem {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    font-size: 14px;
+    background-color: #282c34;
+    color: white;
+    border: 1px solid white;
+
+    ul {
+        text-align: left;
+        padding: 10px;
+    }
+
+    span {
+        font-weight: bold;
+    }
+}
+
+div > .ReactTable {
+    font-size: 14px;
+    background-color: #282c34;
+    color: white;
+    border: none;
+    height: 600px;
+    width: 100%;
+
+    .rt-td {
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+    }
+
+    .rt-thead {
+        background-color: #1546b3;
+        border-bottom: 1px solid white;
+    }
+
+    > .rt-table > .rt-tbody > .rt-tr-group {
+        border-bottom: 1px solid white;
+    }
+
+    .-pagination {
+        background-color: #1546b3;
+    }
+
+    .-previous > .-btn, .-next > .-btn {
+        color: white;
+    }
+}
